@@ -27,3 +27,34 @@ After covering all of these, students can do some of their owm projects and take
 
 - Week 5: Combine all the lessons and create a complete thermistor-based project that interacts with a 4-digit 7-segment display
 
+## Time schedule
+
+### Week 1
+**Objective:** Understand what is Arduino and go through the preparation for the following experiment
+
+**Theory session:** In this session, we will give a brief introduction of Arduino, the paraphirals used in this project and basic Arduino programming functions. That includes the following:
+
+  1. What is a microprocesser and what is an Arduino
+   2. The Input and Output (I/O) pins of the Arduino, how does it works
+      1. Special pins in the Arduino, e.g. PWM pins and Analog Input pins
+      2. How much current they can drive
+   3. Basic C programming in Arduino
+      1. Loops and functions, what is the difference between`setup()` and `loop()` ?
+      2. Arduino functions used in this project, including the followings:
+         1. digitalWrite();
+         2. analogWrite();
+         3. delay(); and millis();
+         4. interrupt();
+   4. Electronic components that are used in this project:
+      1. breadboard
+      2. resistor
+      3. LED display (common Anode)
+      4. buzzers
+      5. push buttons
+      6. jump wires
+
+**Practical session:**
+
+  1. Install Arduino IDE and make sure Arduino connects to students' laptop. Alternatively, students can use the lab computer
+  2. First Arduino program: LED blink sketch
+  1. Building simulation on [TinkerCAD](www.tinkercad.com) website
