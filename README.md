@@ -113,3 +113,5 @@ After covering all of these, students can do some of their owm projects and take
 2. When temperature exceeds the user set temperature, the red LED starts flashing and the buzzer beeps.
 3. Students try to integrate the system by themselves.
 
+### Notice
+When updating to the Arduino, please **DO NOT** connect the pin 0 and pin 1 of the Arduino, this will cause difficulties while uploading the code to the Arduino
