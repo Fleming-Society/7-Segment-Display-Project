@@ -1,12 +1,12 @@
 //Set High to Light LED(s)
-const int A_pin = 7;
-const int B_pin = 6;
-const int C_pin = 5;
-const int D_pin = 4;
-const int E_pin = 3;
-const int F_pin = 2;
-const int G_pin = 1;
-const int Dp_pin = 0;
+const int A_pin = 9;
+const int B_pin = 8;
+const int C_pin = 7;
+const int D_pin = 6;
+const int E_pin = 5;
+const int F_pin = 4;
+const int G_pin = 3;
+const int Dp_pin = 2;
 
 //Set Low to Select Digit
 const int Dig_1_pin = 13;
@@ -14,21 +14,17 @@ const int Dig_2_pin = 12;
 const int Dig_3_pin = 11;
 const int Dig_4_pin = 10;
 
-// TImer
-unsigned int startMillis = 0;
-unsigned int currentMillis = 0;
-unsigned int startMillis_1 = 0;
-
-//Push Button
-// const int button_1_pin = 11;
-// const int button_2_pin = 12;
+// Timer
+unsigned long startMillis = 0;
+unsigned long currentMillis = 0;
+unsigned long startMillis_1 = 0;
 
 int position = 1;
 int number;
 int delay_time = 500;
 
 void setup() {
-  // put your setup code here, to run once:
+  // set pinMode:
   pinMode(A_pin, OUTPUT);
   pinMode(B_pin, OUTPUT);
   pinMode(C_pin, OUTPUT);
@@ -40,15 +36,14 @@ void setup() {
   pinMode(Dig_1_pin, OUTPUT);
   pinMode(Dig_2_pin, OUTPUT);
   pinMode(Dig_3_pin, OUTPUT);
-  pinMode(Dig_4_pin, OUTPUT);
-  // pinMode(button_1_pin, INPUT);
-  // pinMode(button_2_pin, INPUT);
-  
+  pinMode(Dig_4_pin, OUTPUT);  
 }
 
 void loop() {
+  // Load Current Time
   currentMillis = millis();
 
+  // Switch number
   if (currentMillis - startMillis_1 >= delay_time) {
     if (number == 9) {
       number = 0;
@@ -59,6 +54,7 @@ void loop() {
     startMillis_1 = currentMillis;
   }
 
+  // Switch position
   if (currentMillis - startMillis >= 1) {
     if (position == 4) {
       position = 1;
@@ -70,6 +66,8 @@ void loop() {
   }
 }
 
+
+// Function for displaying numbers
 void display_num(int pos, int num) {
   switch (num) {
     case 0:
