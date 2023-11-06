@@ -30,6 +30,22 @@ After covering all of these, students can do some of their owm projects and take
 ## Time schedule
 
 ### Week 1
+
+**Objective:** Implement the experiment “LED blink” and “Buzzer Beep”, then explain the principles behind the code and components. 
+
+**Theory session:** 
+1.	How does LED work by showing an interesting animation
+2.	How to connect LED (cathode and anode) Why there is a difference between them.
+3.	Explain How delay () function works in audrino and how does it connect with time module.
+4.	Explain the difference between delay (), millis() and interrupt
+5.	How does a buzzer work?
+6.	What are the differences between analogue and digital signal?
+
+**Practical Session:**
+1. Make an alarm (flash the LED and beep the buzzer), or maybe a police car.
+
+### Week 2
+
 **Objective:** Understand what is Arduino and go through the preparation for the following experiment
 
 **Theory session:** In this session, we will give a brief introduction of Arduino, the paraphirals used in this project and basic Arduino programming functions. That includes the following:
@@ -59,20 +75,7 @@ After covering all of these, students can do some of their owm projects and take
 2. First Arduino program: LED blink sketch
 3. Building simulation on [TinkerCAD](www.tinkercad.com) website
 
-### Week 2
 
-**Objective:** Implement the experiment “LED blink” and “Buzzer Beep”, then explain the principles behind the code and components. 
-
-**Theory session:** 
-1.	How does LED work by showing an interesting animation
-2.	How to connect LED (cathode and anode) Why there is a difference between them.
-3.	Explain How delay () function works in audrino and how does it connect with time module.
-4.	Explain the difference between delay (), millis() and interrupt
-5.	How does a buzzer work?
-6.	What are the differences between analogue and digital signal?
-
-**Practical Session:**
-1. Make an alarm (flash the LED and beep the buzzer), or maybe a police car.
 
 ### Week 3
 
