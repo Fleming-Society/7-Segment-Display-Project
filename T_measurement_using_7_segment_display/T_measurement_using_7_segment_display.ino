@@ -27,8 +27,9 @@ unsigned long startMillis_1 = 0;
 
 int position = 1;
 int number;
-const int T_refresh_period = 250;
+const int T_refresh_period = 250;  // Refresh period of temperature measurement
 
+// split temperature into 4 digits (Most significant 4 digits)
 byte digit_1;
 byte digit_2;
 byte digit_3;
@@ -89,6 +90,7 @@ void loop() {
   }
 }
 
+// Function to measure temperature and split the temperature number into 4 most signigicant digits.
 void measure_temperature() {
   int t; double T; double V_2; double R_2;
   V_2 = 0.0048828125 * analogRead(analog_pin);
